@@ -14,6 +14,11 @@ const resolvers = {
     module: (_, { id }, { dataSources }) => {
       return dataSources.trackAPI.getModule(id);
     },
+
+    // get a single author by ID, for the author detail page
+    author: (_, { id }, { dataSources }) => {
+      return dataSources.trackAPI.getAuthor(id);
+    },
   },
   Mutation: {
     // increments a track's numberOfViews property

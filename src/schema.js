@@ -8,6 +8,8 @@ const typeDefs = gql`
     track(id: ID!): Track!
     "Fetch a specific module, provided a module's ID"
     module(id: ID!): Module!
+    "Fetch a specific module, provided a module's ID"
+    author(id: ID!): Author!
   }
 
   type Mutation {
